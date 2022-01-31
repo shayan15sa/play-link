@@ -5,20 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play link</title>
+    <title>Link opener</title>
     <link rel="shortcut icon" href="image/fav.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ647HTJL4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-RJ647HTJL4");
-    </script>
+    <link rel="stylesheet" href="node_modules/plyr/dist/plyr.css" />
+    <script src="node_modules/plyr/dist/plyr.js"></script>
 </head>
 
 <body>
@@ -26,7 +17,9 @@
         <div class="title">
             <p id="ptitle">Enter the url</p>
         </div>
-        <input type="url" name="hi" id="inp" />
+        <input type="url" name="hi" id="media" class="media" placeholder="media link" />
+        <br />
+        <input type="url" name="hi" id="sub" class="media" style="margin-top: 10px" placeholder="subtitle link" />
         <br />
         <button id="go" onclick="play()">Go</button>
     </div>
@@ -37,6 +30,6 @@
         <!-- <audio src="audio/I_Loves_You__Porgy.mp3" controls></audio> -->
     </div>
 </body>
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 
 </html>
